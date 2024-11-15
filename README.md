@@ -1,4 +1,4 @@
-# timniklas Home Assistant add-on
+# Home Assistant add-ons
 
 This is a collection of Home Assistant add-ons.
 
