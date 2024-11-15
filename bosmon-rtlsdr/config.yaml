@@ -1,5 +1,5 @@
 name: BosMon RTL-SDR
-version: v0.1.1
+version: v0.2
 slug: bosmon-rtlsdr
 description: RTL-SDR Pocsag receiver
 url: https://github.com/timniklas/addon-bosmon-rtlsdr
@@ -9,11 +9,10 @@ arch:
 - amd64
 options:
   frequency: 439.9875M
-  gain: 100
+  bosmon_url: "http://"
 schema:
-  device: "device"
+  rtl_sdr: "device"
   frequency: "match([0-9_]+[.][0-9_]+M)"
-  gain: "int"
   bosmon_url: "url"
   bosmon_username: "match([a-zA-Z0-9_]+)"
   bosmon_password: "password"
