@@ -9,6 +9,7 @@ ingress_stream: true
 startup: services
 ingress_port: 8073
 startup: services
+init: false
 panel_icon: mdi:antenna
 usb: true
 arch:
