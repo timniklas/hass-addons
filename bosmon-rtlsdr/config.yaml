@@ -5,13 +5,13 @@ description: RTL-SDR Pocsag receiver
 url: https://github.com/timniklas/addon-bosmon-rtlsdr
 image: ghcr.io/timniklas/addon-bosmon-rtlsdr
 startup: services
+usb: true
 arch:
 - amd64
 options:
   frequency: 439.9875M
   bosmon_url: "http://"
 schema:
-  rtl_sdr: "device"
   frequency: "match([0-9_]+[.][0-9_]+M)"
   bosmon_url: "url"
   bosmon_username: "match([a-zA-Z0-9_]+)"
