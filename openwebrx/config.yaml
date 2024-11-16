@@ -1,5 +1,5 @@
 name: OpenWebRX+
-version: v0.1
+version: 1.2.73
 slug: openwebrx
 description: OpenWebRX+ with Digital modes (SoftMBE), including DMR, D-Star, YSF, FreeDV, DRM, NXDN, etc.
 url: https://www.openwebrx.de/
