@@ -1,0 +1,18 @@
+name: PiAware
+version: 1.32.1
+slug: openwebrx
+description: Docker image of dump1090-fa, fr24feed, FlightAware, adsbexchange and Plane Finder.
+url: https://hub.docker.com/r/thomx/fr24feed-piaware
+image: docker.io/thomx/fr24feed-piaware
+ingress: true
+ingress_stream: true
+startup: services
+ingress_port: 8080
+startup: services
+init: false
+panel_icon: mdi:airplane
+usb: true
+arch:
+- amd64
+ports:
+  8080/tcp: null
