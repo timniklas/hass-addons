@@ -14,6 +14,9 @@ panel_icon: mdi:antenna
 usb: true
 arch:
 - amd64
+environment:
+  OPENWEBRX_ADMIN_USER: admin
+  OPENWEBRX_ADMIN_PASSWORD: admin
 ports:
   8073/tcp: 8073
 ports_description:
