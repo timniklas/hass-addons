@@ -1,6 +1,6 @@
 name: PiAware
 version: 1.32.1
-slug: openwebrx
+slug: piaware
 description: Docker image of dump1090-fa, fr24feed, FlightAware, adsbexchange and Plane Finder.
 url: https://hub.docker.com/r/thomx/fr24feed-piaware
 image: docker.io/thomx/fr24feed-piaware
