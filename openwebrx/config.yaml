@@ -14,3 +14,7 @@ panel_icon: mdi:antenna
 usb: true
 arch:
 - amd64
+ports:
+  8073/tcp: 8073
+ports_description:
+  8073/tcp: Webserver
