@@ -1,0 +1,14 @@
+name: USB Backup
+version: v0.1
+slug: backupdrive
+description: Mounts the specified drive in your backup folder.
+url: https://github.com/timniklas/addon-backupdrive/
+image: ghcr.io/timniklas/addon-backupdrive
+startup: services
+map:
+  - type: backup
+    read_only: False
+arch:
+- amd64
+schema:
+  backup_drive: "device"
