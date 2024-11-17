@@ -4,13 +4,10 @@ slug: openwebrx
 description: OpenWebRX+ with Digital modes (SoftMBE), including DMR, D-Star, YSF, FreeDV, DRM, NXDN, etc.
 url: https://www.openwebrx.de/
 image: docker.io/slechev/openwebrxplus-softmbe
-ingress: true
-ingress_stream: true
 startup: services
-ingress_port: 8073
+webui: http://[HOST]:[PORT:8073]/
 startup: services
 init: false
-panel_icon: mdi:antenna
 usb: true
 arch:
 - amd64
