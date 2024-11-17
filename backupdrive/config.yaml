@@ -1,5 +1,5 @@
 name: USB Backup
-version: v0.1
+version: v0.1.1
 slug: backupdrive
 description: Mounts the specified drive in your backup folder.
 url: https://github.com/timniklas/addon-backupdrive/
