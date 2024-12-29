@@ -13,3 +13,5 @@ options:
   frequency: 439.9875M
 schema:
   frequency: "match([0-9_]+[.][0-9_]+M)"
+  ignore_rics:
+  - str
