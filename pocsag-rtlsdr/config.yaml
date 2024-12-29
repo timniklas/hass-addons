@@ -11,6 +11,7 @@ arch:
 - amd64
 options:
   frequency: 439.9875M
+  ignore_rics: []
 schema:
   frequency: "match([0-9_]+[.][0-9_]+M)"
   ignore_rics:
