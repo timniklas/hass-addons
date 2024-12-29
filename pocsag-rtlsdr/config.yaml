@@ -5,6 +5,7 @@ description: RTL-SDR Pocsag receiver
 url: https://github.com/timniklas/addon-pocsag-rtlsdr
 image: ghcr.io/timniklas/addon-pocsag-rtlsdr
 startup: services
+homeassistant_api: true
 usb: true
 arch:
 - amd64
