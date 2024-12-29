@@ -1,7 +1,7 @@
 name: BosMon RTL-SDR
 version: v0.2.4
 slug: bosmon-rtlsdr
-description: RTL-SDR Pocsag receiver
+description: RTL-SDR BosMon receiver
 url: https://github.com/timniklas/addon-bosmon-rtlsdr
 image: ghcr.io/timniklas/addon-bosmon-rtlsdr
 startup: services
