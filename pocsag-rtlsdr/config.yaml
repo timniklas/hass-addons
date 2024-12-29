@@ -1,5 +1,5 @@
 name: Pocsag RTL-SDR
-version: v0.5
+version: v0.6
 slug: pocsag-rtlsdr
 description: RTL-SDR Pocsag receiver
 url: https://github.com/timniklas/addon-pocsag-rtlsdr
@@ -11,8 +11,8 @@ arch:
 - amd64
 options:
   frequency: 439.9875M
-  ignore_rics: []
+  ignore_addresses: []
 schema:
   frequency: "match([0-9_]+[.][0-9_]+M)"
-  ignore_rics:
+  ignore_addresses:
   - str
