@@ -12,9 +12,8 @@ arch:
 options:
   frequency: 439.9875M
   ignore_addresses: []
-  device_id: null
 schema:
   frequency: "match([0-9_]+[.][0-9_]+M)"
   ignore_addresses:
   - str
-  device_id: int(0,)
+  device_id: int(0,)?
