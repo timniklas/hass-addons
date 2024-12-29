@@ -1,0 +1,14 @@
+name: Pocsag RTL-SDR
+version: v0.1
+slug: pocsag-rtlsdr
+description: RTL-SDR Pocsag receiver
+url: https://github.com/timniklas/addon-pocsag-rtlsdr
+image: ghcr.io/timniklas/addon-pocsag-rtlsdr
+startup: services
+usb: true
+arch:
+- amd64
+options:
+  frequency: 439.9875M
+schema:
+  frequency: "match([0-9_]+[.][0-9_]+M)"
