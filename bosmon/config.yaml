@@ -11,7 +11,7 @@ panel_icon: mdi:alarm-light
 arch:
 - amd64
 options:
-  display_resolution: 1280x720
+  display_resolution: 1024x768
 schema:
   key_name: "match([a-zA-Z0-9]+)"
   key_serial: "match([a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5})"
