@@ -1,7 +1,7 @@
 name: Meshtastic Client
 version: v0.0.3
 slug: meshtastic-network-management-client
-description: BosMon ist ein innovatives Programm zum Dekodieren von ZVEI, FMS und Pocsag Telegrammen.
+description: A Meshtastic desktop client, allowing simple, offline deployment and administration of an ad-hoc mesh communication network.
 url: https://github.com/timniklas/addon-meshtastic-network-management-client
 image: ghcr.io/timniklas/addon-meshtastic-network-management-client
 ingress: true
