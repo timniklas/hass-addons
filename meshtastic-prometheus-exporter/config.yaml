@@ -3,7 +3,7 @@ version: v0.1
 slug: meshtastic-prometheus-exporter
 description: Python script to export node data into prometheus db.
 url: https://github.com/timniklas/addon-meshtastic-prometheus-exporter
-image: ghcr.io/timniklas/ddon-meshtastic-prometheus-exporter
+image: ghcr.io/timniklas/addon-meshtastic-prometheus-exporter
 startup: services
 arch:
 - amd64
