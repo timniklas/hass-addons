@@ -1,0 +1,40 @@
+name: "Prometheus"
+version: "0.1.0"
+slug: "prometheus"
+description: "Prometheus-Server mit offiziellem Image prom/prometheus"
+url: "https://prometheus.io/"
+arch:
+  - aarch64
+  - amd64
+  - armv7
+
+# Startet als regulärer Dienst
+startup: services
+init: false
+ingress: false
+host_network: false
+panel_icon: "mdi:chart-line"
+
+# Offizielles Docker-Image (Version gern anpassen)
+image: "docker.io/prom/prometheus:latest"
+
+# Port 9090 nach außen
+ports:
+  "9090/tcp": 9090
+
+# /config ist read-only im Container verfügbar
+map:
+  - config:ro
+
+# Optional: Zeitzone
+environment:
+  TZ: "Europe/Berlin"
+
+# Prometheus-Startparameter:
+# - nutzt deine Datei /config/prometheus/prometheus.yml
+# - schreibt Daten ins persistente Add-on-/data-Verzeichnis
+# - hört auf Port 9090
+args:
+  - "--config.file=/config/prometheus/prometheus.yml"
+  - "--storage.tsdb.path=/data/prometheus"
+  - "--web.listen-address=:9090"
