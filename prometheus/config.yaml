@@ -24,17 +24,8 @@ ports:
 
 # /config ist read-only im Container verfügbar
 map:
-  - config:ro
+  - /config/prometheus.yml:/etc/prometheus/prometheus.yml
 
 # Optional: Zeitzone
 environment:
   TZ: "Europe/Berlin"
-
-# Prometheus-Startparameter:
-# - nutzt deine Datei /config/prometheus/prometheus.yml
-# - schreibt Daten ins persistente Add-on-/data-Verzeichnis
-# - hört auf Port 9090
-args:
-  - "--config.file=/config/prometheus/prometheus.yml"
-  - "--storage.tsdb.path=/data/prometheus"
-  - "--web.listen-address=:9090"
