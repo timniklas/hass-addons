@@ -9,6 +9,8 @@ arch:
 - amd64
 options:
   host: localhost
+schema:
+  host: str
 ports:
   8000/tcp: null
 ports_description:
