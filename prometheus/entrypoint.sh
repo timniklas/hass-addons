@@ -1,12 +1,12 @@
 #!/bin/sh
 set -e
 
-# Stelle sicher, dass das TSDB-Verzeichnis existiert und schreibbar ist
+# TSDB-Verzeichnis sicherstellen
 mkdir -p /data/prometheus
 
-# Prometheus läuft im offiziellen Image als uid 65534 (nobody) – Rechte setzen
-# (falls das Image bzw. Build das so nutzt; schadet aber nicht)
-chown -R 65534:65534 /data
+# Schreibrechte sicherstellen (falls Image standardmäßig 'nobody' nutzt)
+# Wenn das nicht klappt (BusyBox/Permission), ist es trotzdem ok – wir starten als root.
+chown -R 65534:65534 /data 2>/dev/null || true
 
-# Starte Prometheus mit den CMD-Argumenten
+# Prometheus starten (übernimmt die CMD-Argumente)
 exec /bin/prometheus "$@"
