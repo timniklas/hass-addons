@@ -10,6 +10,6 @@ arch:
 options:
   host: localhost
 ports:
-  8080/tcp: 8080
+  8000/tcp: null
 ports_description:
-  8080/tcp: Prometheus node
+  8000/tcp: Prometheus node
