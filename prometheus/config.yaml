@@ -1,31 +1,26 @@
 name: "Prometheus"
-version: "latest"
+version: "0.1.1"
 slug: "prometheus"
-description: "Prometheus-Server mit offiziellem Image prom/prometheus"
-url: "https://prometheus.io/"
+description: "Prometheus-Server (offizielles Image, /config erzwungen)"
 arch:
   - aarch64
   - amd64
   - armv7
 
-# Startet als regulärer Dienst
 startup: services
 init: false
 ingress: false
 host_network: false
 panel_icon: "mdi:chart-line"
 
-# Offizielles Docker-Image (Version gern anpassen)
-image: "docker.io/prom/prometheus"
-
-# Port 9090 nach außen
-ports:
-  "9090/tcp": 9090
-
-# /config ist read-only im Container verfügbar
+# kein image:-Feld -> der Supervisor baut aus dem Dockerfile im Add-on-Ordner
 map:
   - config:ro
 
-# Optional: Zeitzone
+ports:
+  "9090/tcp": 9090
+
 environment:
   TZ: "Europe/Berlin"
+  # Optional: zusätzliche Flags anhängen (z. B. Retention)
+  # PROM_EXTRA_ARGS: "--storage.tsdb.retention.time=15d"
