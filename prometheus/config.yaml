@@ -1,5 +1,5 @@
 name: "Prometheus"
-version: "0.1.0"
+version: "latest"
 slug: "prometheus"
 description: "Prometheus-Server mit offiziellem Image prom/prometheus"
 url: "https://prometheus.io/"
@@ -16,7 +16,7 @@ host_network: false
 panel_icon: "mdi:chart-line"
 
 # Offizielles Docker-Image (Version gern anpassen)
-image: "docker.io/prom/prometheus:latest"
+image: "docker.io/prom/prometheus"
 
 # Port 9090 nach außen
 ports:
