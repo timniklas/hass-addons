@@ -24,7 +24,7 @@ ports:
 
 # /config ist read-only im Container verfügbar
 map:
-  - /config/prometheus.yml:/etc/prometheus/prometheus.yml
+  - config:ro
 
 # Optional: Zeitzone
 environment:
