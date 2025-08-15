@@ -1,0 +1,11 @@
+name: MongoDB Community
+version: 7.0-ubi9
+slug: mongodb
+description: The Official MongoDB Community Server
+url: https://hub.docker.com/r/mongodb/mongodb-community-server
+image: mongodb/mongodb-community-server
+startup: services
+arch:
+- amd64
+ports:
+  27017/tcp: 27017
