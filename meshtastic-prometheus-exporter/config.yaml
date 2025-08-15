@@ -1,5 +1,5 @@
 name: Meshtastic Prometheus Exporter
-version: v0.2
+version: v1.0
 slug: meshtastic-prometheus-exporter
 description: Python script to export node data into prometheus db.
 url: https://github.com/timniklas/addon-meshtastic-prometheus-exporter
