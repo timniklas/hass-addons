@@ -1,5 +1,5 @@
 name: Pocsag RTL-SDR
-version: v0.8.1
+version: v0.9.1
 slug: pocsag-rtlsdr
 description: RTL-SDR Pocsag receiver
 url: https://github.com/timniklas/addon-pocsag-rtlsdr
